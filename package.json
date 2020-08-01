@@ -1,17 +1,12 @@
 {
   "name": "@definux/emeraude-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Emeraude CLI for building application bundles.",
-  "main": "src/index.js",
   "bin": {
-    "@definux/emeraude-cli": "bin/emeraude.js",
     "emeraude-cli": "bin/emeraude.js"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
