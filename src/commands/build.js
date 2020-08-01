@@ -1,9 +1,8 @@
-import { exec } from "child_process";
-import path from 'path';
-import webpack from 'webpack';
-import fs from 'fs';
+const path = require('path');
+const webpack = require('webpack');
+const fs = require('fs');
 
-export class BuildCommand {
+module.exports = class BuildCommand {
 
     constructor(options) {
         this.options = options;
@@ -39,4 +38,4 @@ export class BuildCommand {
            }
         });
     }
-}
+};

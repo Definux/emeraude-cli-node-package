@@ -1,5 +1,5 @@
-import arg from 'arg';
-import { executeCliCommand } from "./commandsFactory";
+const arg = require('arg');
+const { executeCliCommand } = require("./commandsFactory");
 
 function parseArgumentsIntoOptions(rawArgs) {
     const args = arg(
@@ -18,8 +18,10 @@ function parseArgumentsIntoOptions(rawArgs) {
     };
 }
 
-export function cli(args) {
-    let options = parseArgumentsIntoOptions(args);
-    executeCliCommand(options);
-    console.log('Emeraude (https://emeraude.dev/)');
-}
+module.exports = {
+    cli: function (args) {
+        let options = parseArgumentsIntoOptions(args);
+        executeCliCommand(options);
+        console.log('Emeraude (https://emeraude.dev/)');
+    }
+};

@@ -1,4 +1,4 @@
-import { BuildCommand } from './commands/build';
+const { BuildCommand } = require('./commands/build');
 
 class CommandsFactory {
     constructor(options) {
@@ -6,12 +6,15 @@ class CommandsFactory {
     }
 }
 
-export function executeCliCommand(options) {
-    if (typeof(options.template) !== 'undefined') {
-        let command = new CommandsFactory(options);
-        command.executeCommand();
+module.exports = {
+    executeCliCommand: function (options) {
+        if (typeof(options.template) !== 'undefined') {
+            let command = new CommandsFactory(options);
+            command.executeCommand();
+        }
+        else {
+            console.log('The CLI command is not defined.');
+        }
     }
-    else {
-        console.log('The CLI command is not defined.');
-    }
-}
+};
+
