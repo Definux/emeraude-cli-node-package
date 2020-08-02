@@ -1,4 +1,4 @@
-const { BuildCommand } = require('./commands/build');
+const BuildCommand = require('./commands/build');
 
 class CommandsFactory {
     constructor(options) {
