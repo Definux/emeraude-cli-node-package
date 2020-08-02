@@ -1,6 +1,6 @@
 {
   "name": "@definux/emeraude-cli",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Emeraude CLI for building application bundles.",
   "bin": {
     "emeraude-cli": "bin/emeraude.js"
@@ -17,9 +17,8 @@
   ],
   "author": "Definux",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "yargs": "^15.4.1",
-    "webpack": "^4.30.0",
-    "webpack-cli": "^3.3.2"
+    "webpack": "^4.30.0"
   }
 }
