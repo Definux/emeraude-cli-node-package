@@ -30,13 +30,7 @@ module.exports = class BuildCommand {
         console.log('Start building application bundles.. ' + (this.options.dev ? 'in development' : 'in production. Building may take a bit longer to finish.'));
 
         webpack(emConfig, (error, stats) => {
-           if (error) {
-               console.log(error);
-           }
-
-           if (stats) {
-               console.log(stats);
-           }
+            console.log('Building completed.');
         });
     }
 };
