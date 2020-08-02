@@ -1,6 +1,6 @@
 {
   "name": "@definux/emeraude-cli",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Emeraude CLI for building application bundles.",
   "bin": {
     "empack": "bin/emeraude.js"

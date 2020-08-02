@@ -33,8 +33,9 @@ module.exports = class BuildCommand {
            if (error) {
                console.log(error);
            }
-           if (stats.hasErrors()) {
-               console.log(new Error(stats.compilation.errors.join('\n')));
+
+           if (stats) {
+               console.log(stats);
            }
         });
     }
